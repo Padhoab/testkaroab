@@ -214,14 +214,26 @@ border-bottom:2px solid #1e3a8a;
 
 }
 
-.logo img{
-
-width:120px;
-
-height:auto;
-
+.brandLink{
+    text-decoration:none;
+    color:white;
+    display:block;
 }
 
+.brandName{
+    font-size:30px;
+    font-weight:700;
+    line-height:1.1;
+    letter-spacing:-0.5px;
+}
+
+.brandSub{
+    font-size:12px;
+    color:#93c5fd;
+    margin-top:3px;
+    letter-spacing:1px;
+}
+  
 nav{
 
 display:flex;
@@ -1099,31 +1111,21 @@ color:white;
 <body>
 
 <header>
+    <div class="brand">
+        <a href="https://test.padhoab.in/" class="brandLink">
+            <div class="brandName">TestKaroAB</div>
+            <div class="brandSub">by PadhoAB</div>
+        </a>
+    </div>
 
-<div class="logo">
-
-<a href="https://padhoab.in">
-
-<img src="logo.png">
-
-</a>
-
-</div>
-
-<nav>
-
-<a href="https://padhoab.in">Home</a>
-
-<a href="https://padhoab.in/current-affairs.html">Current Affairs</a>
-
-<a href="https://padhoab.in/static-gk.html">Static GK</a>
-
-<a href="https://padhoab.in/contact.html">Contact</a>
-
-</nav>
-
+    <nav>
+        <a href="#" onclick="showExams(); return false;">Tests</a>
+        <a href="#" onclick="showProgress(); return false;">Performance</a>
+        <a href="https://padhoab.in/current-affairs.html">Current Affairs</a>
+        <a href="#" onclick="toggleAccountMenu(); return false;">Account</a>
+    </nav>
 </header>
-
+  
 <div id="app" class="container">
 
 Loading...
